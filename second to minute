@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int s;
+    cin >> s;
+    cout << s << " seconds is equivalent to " << s / 3600 << " hours " << (s % 3600) / 60 << " minutes " << s % 60 << " seconds." << endl;
+    return 0;
+}

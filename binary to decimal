@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+void decimalToBinary(int n) {
+    if (n == 0) {
+       cout << 0;
+        return;
+    }
+    while (n > 0) {
+      cout << (n % 2);
+        n /= 2;
+    }
+}
+
+int main() {
+    int n;
+   cout << "Enter a decimal number: ";
+   cin >> n;
+   cout << "Binary representation: ";
+    decimalToBinary(n);
+   cout << std::endl;
+    return 0;
+}
